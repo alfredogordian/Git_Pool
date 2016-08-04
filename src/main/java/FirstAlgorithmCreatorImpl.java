@@ -16,5 +16,32 @@ public class FirstAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
         return result;
     }
 
+    public String wordsReverser(String originalPhrase) {
+
+        char[] input= originalPhrase.toCharArray();
+
+        int index=0;
+
+        for(int i=0; i<input.length;i++){
+           if(input[i]==' '){
+                reverse(input, index, i-1);
+               index = i + 1;
+           }
+        }
+        reverse(input, index, input.length-1);
+        reverse(input, 0, input.length-1);
+        return String.copyValueOf(input);
+    }
+
+    private void reverse(char[] input, int index, int lastIndex) {
+        while(index<lastIndex){
+            char temp= input[index];
+            input[index]=input[lastIndex];
+            input[lastIndex]=temp;
+            index++;
+            lastIndex--;
+        }
+    }
+
 
 }

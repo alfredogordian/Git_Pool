@@ -4,4 +4,6 @@
 public interface AlgorithmCreatorInterface {
 
     int [] arrayIntegerRotate(int[] input, int rotation);
+
+    String wordsReverser(String originalPhrase);
 }

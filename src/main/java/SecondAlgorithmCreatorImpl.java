@@ -11,4 +11,8 @@ public class SecondAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
 
         return input;
     }
+
+    public String wordsReverser(String originalPhrase) {
+        return null;
+    }
 }
