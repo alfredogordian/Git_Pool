@@ -33,6 +33,10 @@ public class FirstAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
         return String.copyValueOf(input);
     }
 
+    public boolean palindromeEvaluator(String phrase) {
+        return false;
+    }
+
     private void reverse(char[] input, int index, int lastIndex) {
         while(index<lastIndex){
             char temp= input[index];

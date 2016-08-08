@@ -35,6 +35,14 @@ public class AlgorithmCreatorInterfaceTest {
     @Test
     public void testwordsReverser(){
         assertEquals("The result is not as expected", "blue is sky the", algorithmCreator.wordsReverser("the sky is blue"));
+        assertEquals("The result is not as expected", "blue is sky the", algorithmCreator.wordsReverser("the sky is blue"));
+        assertEquals("The result is not as expected", "asd", algorithmCreator.wordsReverser("asd"));
+    }
+
+    @Test
+    public void palindromeEvaluatorTest(){
+        assertTrue("The result should be true", algorithmCreator.palindromeEvaluator("Anita Lava La Tina"));
+        assertFalse("The result should be false", algorithmCreator.palindromeEvaluator("This is not a palindrome"));
     }
 
 }

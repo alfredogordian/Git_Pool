@@ -15,4 +15,8 @@ public class SecondAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
     public String wordsReverser(String originalPhrase) {
         return null;
     }
+
+    public boolean palindromeEvaluator(String phrase) {
+        return false;
+    }
 }

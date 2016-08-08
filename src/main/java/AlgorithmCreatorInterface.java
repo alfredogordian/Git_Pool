@@ -6,4 +6,6 @@ public interface AlgorithmCreatorInterface {
     int [] arrayIntegerRotate(int[] input, int rotation);
 
     String wordsReverser(String originalPhrase);
+
+    boolean palindromeEvaluator(String phrase);
 }
