@@ -19,4 +19,8 @@ public class SecondAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
     public boolean palindromeEvaluator(String phrase) {
         return false;
     }
+
+    public int[] fibonacciCreator(int size) {
+        return new int[0];
+    }
 }

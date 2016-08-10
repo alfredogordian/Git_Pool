@@ -72,5 +72,17 @@ public class FirstAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
 
     }
 
+    public int[] fibonacciCreator(int size) {
+
+        int [] fibonacciSequence = new int[size];
+
+        for(int i =0; i<size; i++) {
+            if(i>1) fibonacciSequence[i]=fibonacciSequence[i-2]+fibonacciSequence[i-1];
+            else if(i==1) fibonacciSequence[i]=1;
+            else fibonacciSequence[i]=0;
+        }
+        return fibonacciSequence;
+    }
+
 
 }

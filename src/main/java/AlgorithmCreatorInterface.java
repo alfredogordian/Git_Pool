@@ -8,4 +8,6 @@ public interface AlgorithmCreatorInterface {
     String wordsReverser(String originalPhrase);
 
     boolean palindromeEvaluator(String phrase);
+
+    int[] fibonacciCreator(int size);
 }
