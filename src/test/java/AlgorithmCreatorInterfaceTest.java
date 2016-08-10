@@ -48,4 +48,9 @@ public class AlgorithmCreatorInterfaceTest {
         assertFalse("The result should be false", algorithmCreator.palindromeEvaluator("This is not a palindrome"));
     }
 
+    @Test
+    public void testFibonacciCreator(){
+        assertTrue(true);
+    }
+
 }
