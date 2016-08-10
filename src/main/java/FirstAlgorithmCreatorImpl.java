@@ -33,10 +33,6 @@ public class FirstAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
         return String.copyValueOf(input);
     }
 
-    public boolean palindromeEvaluator(String phrase) {
-        return false;
-    }
-
     private void reverse(char[] input, int index, int lastIndex) {
         while(index<lastIndex){
             char temp= input[index];
@@ -45,6 +41,35 @@ public class FirstAlgorithmCreatorImpl implements AlgorithmCreatorInterface {
             index++;
             lastIndex--;
         }
+    }
+
+    public boolean palindromeEvaluator(String phrase) {
+
+        phrase = phrase.trim();
+        phrase = phrase.toLowerCase();
+        char [] phraseArray = phrase.toCharArray();
+        boolean isPalindrome = false;
+        int indexReturn=1;
+        for (int i=0; i<phraseArray.length/2;i++){
+
+            if(!Character.isLetter(phraseArray[i])){
+                i++;
+            }
+
+            if(!Character.isLetter(phraseArray[phraseArray.length - indexReturn])){
+                indexReturn++;
+            }
+
+            if(phraseArray[i]==phraseArray[phraseArray.length-indexReturn]){
+                isPalindrome = true;
+            }else{
+                return false;
+            }
+
+            indexReturn++;
+        }
+        return isPalindrome;
+
     }
 
 

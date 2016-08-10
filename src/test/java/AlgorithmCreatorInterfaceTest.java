@@ -40,8 +40,11 @@ public class AlgorithmCreatorInterfaceTest {
     }
 
     @Test
-    public void palindromeEvaluatorTest(){
-        assertTrue("The result should be true", algorithmCreator.palindromeEvaluator("Anita Lava La Tina"));
+    public void testPalindromeEvaluator(){
+        assertTrue("The result should be true", algorithmCreator.palindromeEvaluator("anita Lava La Tina"));
+        assertTrue("The result should be true", algorithmCreator.palindromeEvaluator("Sometamos o matemos"));
+        //assertTrue("The result should be true", algorithmCreator.palindromeEvaluator("Yo dono rosas, oro no doy"));
+        assertFalse("The result should be false", algorithmCreator.palindromeEvaluator("no PALINDROME"));
         assertFalse("The result should be false", algorithmCreator.palindromeEvaluator("This is not a palindrome"));
     }
 
